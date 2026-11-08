@@ -1,0 +1,9 @@
+# local preview and dev tooling (not deployed)
+artifact/
+spec/
+tools/
+work/
+work2/
+__pycache__/
+*.pyc
+.DS_Store

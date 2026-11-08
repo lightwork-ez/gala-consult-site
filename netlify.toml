@@ -1,0 +1,4 @@
+# GalA-Consult - static site, no build step.
+# Netlify publishes the ready files from site/ on every push to main.
+[build]
+  publish = "site"
