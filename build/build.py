@@ -7,7 +7,7 @@ import logos
 
 SITE = os.path.join(ROOT, 'site')
 MAP = json.load(open(os.path.join(HERE, 'map.json')))
-DOMAIN = 'https://galaconsult.kz'
+DOMAIN = 'https://galaconsult.com'
 E = html.escape
 
 # ---------------- icons ----------------
@@ -209,7 +209,7 @@ def request_modal(d):
       <input type="hidden" name="form-name" value="request">
       <input type="hidden" name="project" value="">
       <input type="hidden" name="page" value="">
-      <input type="hidden" name="subject" value="Запрос с сайта galaconsult.kz">
+      <input type="hidden" name="subject" value="Запрос с сайта galaconsult.com">
       <p class="hp"><label>Не заполняйте это поле <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
       <div class="rq__head">
         <img class="rq__logo" src="{d}assets/img/logo-h.svg" alt="" width="128" height="32">

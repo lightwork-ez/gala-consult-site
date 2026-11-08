@@ -1,14 +1,15 @@
-# GalA-Consult - сайт galaconsult.kz
+# GalA-Consult - сайт galaconsult.com
 
 Статический сайт ТОО «ГалА-Консалт» (Алматы). Сделан студией WEBCRAFT.
 
 ## Как устроено
+- Домен galaconsult.com: A @ → 75.2.60.5, CNAME www → gala-consult.netlify.app (проект Netlify gala-consult). Почта компании остаётся на galaconsult.kz.
 - `site/` - готовый сайт. Netlify публикует эту папку без сборки (`netlify.toml`), деплой - любой push в `main`.
 - `build/build.py` - генератор всех страниц: тексты главной, список проектов `P` (тексты, даты, 2 документа), шапка, подвал, форма запроса, 404. После правок: `python3 build/build.py` - пересобирает `site/`.
 - `build/logos.py` + `build/applemark.py` - логотип (глобус-яблоко) и все SVG-версии; `python3 build/logos.py` перегенерирует файлы логотипов.
 - `site/assets/css/site.css`, `site/assets/js/site.js` - стили и скрипты, правятся напрямую.
 - `site/_redirects` - старые ссылки (например `/july2024`) ведут на новые страницы; задаются в `OLD_SLUGS` в `build.py`.
-- Форма «Написать нам» - Netlify Forms (`name="request"`). На galaconsult.kz и *.netlify.app отправляет по-настоящему, в остальных местах (превью, localhost) - демо-режим.
+- Форма «Написать нам» - Netlify Forms (`name="request"`). На galaconsult.com (и .kz) и *.netlify.app отправляет по-настоящему, в остальных местах (превью, localhost) - демо-режим.
 
 ## Правила
 - На странице каждого проекта всегда 2 ссылки на анкеты и документы - не убирать.

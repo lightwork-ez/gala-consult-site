@@ -52,7 +52,7 @@
     var sendBtn = form.querySelector('.rq__send');
     var fail = form.querySelector('.rq__fail');
     var opener = null, timers = [], busy = false, finished = false;
-    var LIVE = /(^|\.)galaconsult\.kz$/i.test(location.hostname) || /\.netlify\.app$/i.test(location.hostname);
+    var LIVE = /(^|\.)galaconsult\.(com|kz)$/i.test(location.hostname) || /\.netlify\.app$/i.test(location.hostname);
     var q = function (sel) { return modal.querySelector(sel); };
     var focusables = function () {
       return Array.prototype.filter.call(modal.querySelectorAll('button, [href], input:not([type="hidden"]):not([tabindex="-1"]), select, textarea'), function (el) {
