@@ -4,6 +4,39 @@
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var raf = window.requestAnimationFrame || function (f) { return setTimeout(function () { f(Date.now()); }, 33); };
 
+  /* ---------- texts: the page's language (site/ is ru, site/kz/ is kk, site/de/ is de) ---------- */
+  var LANG = (document.documentElement.getAttribute('lang') || 'ru').slice(0, 2);
+  var TXS = {
+    ru: {
+      menuOpen: 'Открыть меню', menuClose: 'Закрыть меню',
+      name: 'Укажите имя',
+      contact: 'Укажите телефон или email, чтобы мы могли ответить',
+      contactBad: 'Проверьте номер телефона или адрес почты',
+      topic: 'Выберите тему запроса',
+      subject: 'Запрос с сайта: ',
+      letter: 'Запрос: ', copy: 'Скопировать', copied: 'Скопировано'
+    },
+    kk: {
+      menuOpen: 'Мәзірді ашу', menuClose: 'Мәзірді жабу',
+      name: 'Атыңызды көрсетіңіз',
+      contact: 'Жауап беруіміз үшін телефон немесе email көрсетіңіз',
+      contactBad: 'Телефон нөмірін немесе пошта мекенжайын тексеріңіз',
+      topic: 'Сұраныс тақырыбын таңдаңыз',
+      subject: 'Запрос с сайта (KZ): ',          // the team reads the subject in Russian; (KZ) = answer in Kazakh
+      letter: 'Сұраныс: ', copy: 'Көшіру', copied: 'Көшірілді'
+    },
+    de: {
+      menuOpen: 'Menü öffnen', menuClose: 'Menü schließen',
+      name: 'Bitte geben Sie Ihren Namen an',
+      contact: 'Bitte geben Sie Telefon oder E-Mail an, damit wir antworten können',
+      contactBad: 'Bitte prüfen Sie die Telefonnummer oder E-Mail-Adresse',
+      topic: 'Bitte wählen Sie ein Thema',
+      subject: 'Запрос с сайта (DE): ',          // (DE) = answer in German
+      letter: 'Anfrage: ', copy: 'Kopieren', copied: 'Kopiert'
+    }
+  };
+  var TX = TXS[LANG] || TXS.ru;
+
   /* ---------- header state ---------- */
   var hdr = document.querySelector('.hdr');
   function onScroll() { if (hdr) hdr.classList.toggle('is-scrolled', window.scrollY > 8); }
@@ -16,7 +49,7 @@
   function setMenu(open) {
     if (!burger || !menu) return;
     burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-    burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+    burger.setAttribute('aria-label', open ? TX.menuClose : TX.menuOpen);
     menu.hidden = !open;
     document.body.classList.toggle('menu-open', open);
   }
@@ -24,7 +57,7 @@
     burger.addEventListener('click', function () { setMenu(burger.getAttribute('aria-expanded') !== 'true'); });
     menu.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
-    window.addEventListener('resize', function () { if (window.innerWidth > 900) setMenu(false); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 1100) setMenu(false); });
   }
 
   /* ---------- active section in nav (home) ---------- */
@@ -120,13 +153,13 @@
       var name = form.elements.name.value.trim();
       var contact = form.elements.contact.value.trim();
       var topic = form.querySelector('input[name="topic"]:checked');
-      if (!name) { setErr('name', 'Укажите имя'); ok = false; firstBad = firstBad || form.elements.name; } else setErr('name', '');
+      if (!name) { setErr('name', TX.name); ok = false; firstBad = firstBad || form.elements.name; } else setErr('name', '');
       var digits = contact.replace(/\D/g, '').length;
       var isMail = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(contact);
-      if (!contact) { setErr('contact', 'Укажите телефон или email, чтобы мы могли ответить'); ok = false; firstBad = firstBad || form.elements.contact; }
-      else if (!isMail && digits < 7) { setErr('contact', 'Проверьте номер телефона или адрес почты'); ok = false; firstBad = firstBad || form.elements.contact; }
+      if (!contact) { setErr('contact', TX.contact); ok = false; firstBad = firstBad || form.elements.contact; }
+      else if (!isMail && digits < 7) { setErr('contact', TX.contactBad); ok = false; firstBad = firstBad || form.elements.contact; }
       else setErr('contact', '');
-      if (!topic) { setErr('topic', 'Выберите тему запроса'); ok = false; firstBad = firstBad || form.querySelector('input[name="topic"]'); } else setErr('topic', '');
+      if (!topic) { setErr('topic', TX.topic); ok = false; firstBad = firstBad || form.querySelector('input[name="topic"]'); } else setErr('topic', '');
       if (firstBad) firstBad.focus();
       return ok;
     };
@@ -136,7 +169,7 @@
     form.addEventListener('change', function (e) { if (e.target.name === 'topic') setErr('topic', ''); });
     var send = function () {
       var t = form.querySelector('input[name="topic"]:checked');
-      form.elements.subject.value = 'Запрос с сайта: ' + (t ? t.value : 'без темы') + ' - ' + form.elements.name.value.trim();
+      form.elements.subject.value = TX.subject + (t ? t.value : 'без темы') + ' - ' + form.elements.name.value.trim();
       if (!LIVE) return new Promise(function (res) { setTimeout(function () { res(true); }, 450); });
       var body = new URLSearchParams(new FormData(form)).toString();
       return fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
@@ -157,7 +190,8 @@
     var play = function () {
       var fd = new FormData(form);
       var topicEl = form.querySelector('input[name="topic"]:checked');
-      q('[data-fx="topic"]').textContent = 'Запрос: ' + (topicEl ? topicEl.value : '');
+      var topicLbl = topicEl && topicEl.parentNode.querySelector('span');
+      q('[data-fx="topic"]').textContent = TX.letter + (topicLbl ? topicLbl.textContent : (topicEl ? topicEl.value : ''));
       q('[data-fx="name"]').textContent = (fd.get('name') || '').toString().trim();
       q('[data-fx="company"]').textContent = (fd.get('company') || '').toString().trim();
       q('[data-fx="who"]').textContent = (fd.get('name') || '').toString().trim().split(/\s+/)[0] || '';
@@ -267,14 +301,26 @@
     });
   }
 
+  /* ---------- language switch: open the other language at the same section ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('.lang a[hreflang]'), function (a) {
+    a.addEventListener('click', function () {
+      if (a.hasAttribute('aria-current')) return;
+      var id = '';
+      Array.prototype.forEach.call(document.querySelectorAll('main section[id]'), function (sec) {
+        if (sec.getBoundingClientRect().top <= 140) id = sec.id;
+      });
+      a.setAttribute('href', a.getAttribute('href').split('#')[0] + (id ? '#' + id : ''));
+    });
+  });
+
   /* ---------- copy buttons ---------- */
   Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'), function (btn) {
     btn.addEventListener('click', function () {
       var text = btn.getAttribute('data-copy');
       var done = function () {
         btn.classList.add('is-done');
-        btn.setAttribute('aria-label', 'Скопировано');
-        setTimeout(function () { btn.classList.remove('is-done'); btn.setAttribute('aria-label', 'Скопировать'); }, 1600);
+        btn.setAttribute('aria-label', TX.copied);
+        setTimeout(function () { btn.classList.remove('is-done'); btn.setAttribute('aria-label', TX.copy); }, 1600);
       };
       var fallback = function () {
         var target = document.getElementById(btn.getAttribute('aria-controls'));

@@ -164,6 +164,12 @@ button { font: inherit; color: inherit; }
 .burger[aria-expanded="true"] span::before { transform: translateY(6px) rotate(45deg); }
 .burger[aria-expanded="true"] span::after { transform: translateY(-6px) rotate(-45deg); }
 
+/* language switch RU | DE (site/ and site/de/): the current language filled like a chosen topic chip */
+.lang { display: inline-flex; flex: none; gap: 2px; margin-left: -10px; padding: 3px; border: 1px solid var(--line-2); border-radius: 999px; background: rgba(255, 255, 255, .6); }
+.lang a { display: grid; place-items: center; min-width: 38px; height: 34px; padding: 0 10px; border-radius: 999px; font-size: 13px; font-weight: 600; line-height: 1; letter-spacing: .06em; color: var(--ink-3); transition: color .2s, background-color .2s; }
+.lang a:hover { color: var(--navy-deep); background: rgba(14, 38, 80, .06); }
+.lang a[aria-current] { color: #fff; background: linear-gradient(180deg, #23468F, #0C2350); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22), 0 4px 10px rgba(14, 38, 80, .16); }
+
 .menu {
   position: fixed; inset: 0; z-index: 49; background: var(--bg);
   padding: calc(env(safe-area-inset-top, 0px) + 92px) max(16px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 28px) max(16px, env(safe-area-inset-left, 0px));
@@ -174,12 +180,23 @@ button { font: inherit; color: inherit; }
 .menu__contacts { display: grid; gap: 6px; color: var(--ink-2); }
 .menu__contacts a { color: var(--navy); font-weight: 500; }
 
-@media (max-width: 1080px) { .nav { gap: 20px; } .hdr__tel { display: none; } }
-@media (max-width: 900px) {
+/* header steps (with the KZ | RU | DE switch; German labels are the longest): phone from 1281 px, full nav from 1101 px, burger below */
+.nav a, .hdr__cta .btn { white-space: nowrap; }
+@media (max-width: 1280px) { .nav { gap: 20px; } .hdr__tel { display: none; } }
+@media (max-width: 1100px) {
   .nav, .hdr__cta { display: none; }
-  .burger { display: block; }
+  .hdr__in { gap: 10px; }
+  .burger { display: block; margin-left: 0; }
+  .lang { margin-left: auto; }
+}
+@media (max-width: 900px) {
+  .lang a { height: 36px; min-width: 40px; }
   .hdr__in { height: 68px; }
   .brand img { height: 40px; }
+}
+@media (max-width: 374px) {
+  .brand img, .hdr.is-scrolled .brand img { height: 34px; }
+  .lang a { min-width: 34px; padding: 0 7px; }
 }
 body.menu-open { overflow: hidden; }
 
@@ -311,7 +328,7 @@ body.menu-open { overflow: hidden; }
 }
 .proj:hover { border-color: #B6C3DC; box-shadow: 0 2px 4px rgba(14, 38, 80, .05), 0 22px 46px rgba(14, 38, 80, .10); }
 .proj:hover .proj__title { color: var(--navy-2); }
-.proj__top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.proj__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; }
 .tag { font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
 .place { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--ink-2); white-space: nowrap; }
 .place img { width: 22px; height: 15px; border-radius: 2px; box-shadow: 0 0 0 1px rgba(14,38,80,.12); object-fit: cover; }
@@ -472,6 +489,9 @@ body.menu-open { overflow: hidden; }
 .letter__body ul { display: grid; gap: 10px; }
 .letter__body li { position: relative; padding-left: 22px; }
 .letter__body li::before { content: ""; position: absolute; left: 2px; top: .7em; width: 7px; height: 7px; transform: rotate(45deg); background: linear-gradient(135deg, var(--accent-hi), var(--accent-lo)); border-radius: 1px; }
+.letter__body ol { display: grid; gap: 12px; counter-reset: pt; }
+.letter__body ol > li { counter-increment: pt; padding-left: 28px; }
+.letter__body ol > li::before { content: counter(pt) "."; top: 0; left: 0; width: auto; height: auto; transform: none; background: none; border-radius: 0; font-weight: 600; color: var(--accent-ink); }
 .letter__body a { color: var(--cobalt); border-bottom: 1px solid rgba(36,83,208,.3); }
 .letter__body .callout { padding: 18px 20px; border-radius: var(--r-s); background: #F2F5FB; border: 1px solid #DCE4F3; }
 .letter__sign { padding: 0 clamp(22px, 4vw, 52px) clamp(26px, 3.4vw, 40px); color: var(--ink-2); line-height: 1.6; }
@@ -494,6 +514,10 @@ a.doc:hover { border-color: #9DB2DE; box-shadow: 0 10px 24px rgba(14,38,80,.10);
 .doc__go svg { width: 16px; height: 16px; }
 .doc--pending { background: #FBFCFE; }
 .doc__soon { font-size: 11.5px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); padding: 4px 9px; border-radius: 999px; box-shadow: inset 0 0 0 1px var(--line-2); white-space: nowrap; }
+@media (max-width: 480px) {   /* phones: the "soon" pill goes under the text, which gets the full width */
+  .doc--pending { grid-template-columns: auto minmax(0, 1fr); row-gap: 8px; }
+  .doc--pending .doc__soon { grid-column: 2; justify-self: start; }
+}
 
 .pp__side { display: grid; gap: 16px; position: sticky; top: 92px; min-width: 0; }
 .side { background: var(--paper); border: 1px solid var(--line); border-radius: var(--r); padding: 22px; display: grid; gap: 14px; box-shadow: var(--sh-1); }
@@ -502,7 +526,7 @@ a.doc:hover { border-color: #9DB2DE; box-shadow: 0 10px 24px rgba(14,38,80,.10);
 .kv div { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 12px; padding: 11px 0; border-top: 1px solid var(--line); font-size: 15px; line-height: 1.45; }
 .kv div:first-child { border-top: 0; padding-top: 0; }
 .kv dt { color: var(--ink-3); }
-.kv dd { margin: 0; color: var(--ink); }
+.kv dd { margin: 0; color: var(--ink); overflow-wrap: break-word; -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 12 5 5; }
 .side--docs { background: linear-gradient(180deg, #FFFFFF 0%, #F6F8FC 100%); border-color: #CFD8E7; }
 .side--docs .doc { padding: 12px; gap: 12px; }
 .side--docs .doc__file, .side--docs .doc__file svg { width: 34px; height: 41px; }
@@ -662,3 +686,34 @@ html.modal-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .modal__panel, .modal__bg, .rq, .done > * { transition: none !important; }
 }
+
+/* ---------- German (site/de/): long compounds break with a hyphen in running text and narrow boxes;
+   headings keep their own breaks (&shy; in build.py) ---------- */
+html[lang="de"] :is(p, li, dd, .doc__title, .doc__sub) { overflow-wrap: break-word; }
+html[lang="de"] :is(dd, .doc__title, .doc__sub) { -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 12 5 5; }
+@media (max-width: 720px) {
+  html[lang="de"] :is(p, li) { -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 12 5 5; }
+}
+@media (max-width: 420px) {
+  html[lang="de"] :is(.reg__t, .proj__title, .pp__title) { -webkit-hyphens: auto; hyphens: auto; hyphenate-limit-chars: 14 6 6; overflow-wrap: break-word; }
+}
+
+/* ---------- Kazakh (site/kz/): Spectral has no Kazakh letters (Ә Ғ Қ Ң Ө Ү Һ), so the headings there are set in
+   Literata (SIL OFL, assets/fonts), scaled down to Spectral's size and set a little lighter to keep the same colour ---------- */
+@font-face { font-family: "Literata GC"; font-style: normal; font-weight: 200 900; font-display: swap; size-adjust: 91%;
+  src: url(../fonts/literata-cyrillic-ext-opsz-normal.woff2) format("woff2"); unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+@font-face { font-family: "Literata GC"; font-style: normal; font-weight: 200 900; font-display: swap; size-adjust: 91%;
+  src: url(../fonts/literata-cyrillic-opsz-normal.woff2) format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Literata GC"; font-style: normal; font-weight: 200 900; font-display: swap; size-adjust: 91%;
+  src: url(../fonts/literata-latin-opsz-normal.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Literata GC"; font-style: italic; font-weight: 200 900; font-display: swap; size-adjust: 91%;
+  src: url(../fonts/literata-cyrillic-ext-opsz-italic.woff2) format("woff2"); unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+@font-face { font-family: "Literata GC"; font-style: italic; font-weight: 200 900; font-display: swap; size-adjust: 91%;
+  src: url(../fonts/literata-cyrillic-opsz-italic.woff2) format("woff2"); unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+@font-face { font-family: "Literata GC"; font-style: italic; font-weight: 200 900; font-display: swap; size-adjust: 91%;
+  src: url(../fonts/literata-latin-opsz-italic.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+html[lang="kk"] { --f-display: "Literata GC", Georgia, "Times New Roman", serif; }
+html[lang="kk"] :is(.display, .h2, .proj__title, .pp__title, .reg__t, .pnav__t, .rq__title, .done h3, .menu nav a, .letter__body .salute) { font-weight: 340; }
+html[lang="kk"] :is(.h3, .letter__sign b) { font-weight: 450; }
+html[lang="kk"] :is(.fact__num, .year__n) { font-weight: 270; }
+html[lang="kk"] :is(p, li, dd, .doc__title, .doc__sub, .reg__t, .proj__title, .pp__title) { overflow-wrap: break-word; }
