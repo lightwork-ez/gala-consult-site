@@ -222,16 +222,17 @@ body.menu-open { overflow: hidden; }
 @keyframes sheen { 0% { transform: translateX(-130px); } 24%, 100% { transform: translateX(270px); } }
 
 .facts { position: relative; z-index: 1; padding-bottom: clamp(40px, 5vw, 72px); }
-.facts__row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line-2); }
-.fact { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px; align-items: center; padding: 26px 28px 4px 0; }
-.fact + .fact { padding-left: 28px; border-left: 1px solid var(--line); }
-.fact__num {
-  font-family: var(--f-display); font-weight: 300; font-size: clamp(46px, 5vw, 66px); line-height: .9;
-  letter-spacing: -.02em; font-variant-numeric: lining-nums tabular-nums;
+.display--long { font-size: clamp(32px, 3.3vw, 48px); line-height: 1.1; }
+/* the company's two dates under the hero: a year and a line of text each */
+.dates { border-top: 1px solid var(--line-2); }
+.dates li { display: grid; grid-template-columns: 3.4em minmax(0, 1fr); gap: 24px; align-items: baseline; padding: 15px 0; border-bottom: 1px solid var(--line); }
+.dates__year {
+  font-family: var(--f-display); font-weight: 400; font-size: 27px; line-height: 1; letter-spacing: -.01em;
+  font-variant-numeric: lining-nums tabular-nums;
   background: linear-gradient(180deg, var(--accent-hi) 0%, var(--accent) 42%, var(--accent-lo) 56%, var(--accent) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 }
-.fact__txt { font-size: 15px; line-height: 1.45; color: var(--ink-2); max-width: 22em; }
+.dates__txt { font-size: 16px; line-height: 1.5; color: var(--ink-2); }
 
 /* page-load sequence */
 @media (prefers-reduced-motion: no-preference) {
@@ -247,9 +248,9 @@ body.menu-open { overflow: hidden; }
   .hero__grid { grid-template-columns: minmax(0, 1fr); gap: 8px; }
   .lockup { order: -1; justify-self: start; width: min(100%, 470px); margin: 4px 0 22px; }
   .hero::before { right: -420px; top: -360px; }
-  .facts__row { grid-template-columns: minmax(0, 1fr); }
-  .fact { padding: 20px 0 4px; }
-  .fact + .fact { padding-left: 0; border-left: 0; border-top: 1px solid var(--line); }
+  .dates li { gap: 16px; padding: 13px 0; }
+  .dates__year { font-size: 24px; }
+  .dates__txt { font-size: 15px; }
 }
 
 /* ---------- sections ---------- */
@@ -345,22 +346,19 @@ body.menu-open { overflow: hidden; }
 
 /* founder */
 .founder { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 5vw, 80px); align-items: start; }
-.photo { position: relative; margin: 0; }
-.photo__frame {
-  position: relative; border-radius: var(--r); overflow: hidden; padding: 6px;
-  background: linear-gradient(145deg, #FFFFFF 0%, #D6DDE8 35%, #F4F6FA 55%, #B9C3D3 100%);
-  box-shadow: var(--sh-2);
-}
-.photo__frame img { width: 100%; aspect-ratio: 630 / 575; object-fit: cover; border-radius: 10px; }
-.photo figcaption { margin-top: 14px; font-size: 13.5px; color: var(--ink-3); }
+.founder__head { display: grid; gap: 20px; align-content: start; min-width: 0; }
 .founder__body { display: grid; gap: 20px; min-width: 0; }
 .founder__role { font-size: 13px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); }
 .career { display: grid; border-top: 1px solid var(--line-2); margin-top: 6px; }
 .career li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 18px; padding: 15px 0; border-bottom: 1px solid var(--line); }
 .career__when { font-size: 13px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3); padding-top: 3px; }
 .career__what { color: var(--ink); line-height: 1.5; }
-.founder__note { color: var(--ink-2); }
-@media (max-width: 900px) { .founder { grid-template-columns: minmax(0, 1fr); } .photo { max-width: 560px; } }
+.founder__edu { color: var(--ink-2); margin-top: -8px; }
+.founder__edu b { font-weight: 500; color: var(--ink); }
+.team { display: grid; gap: 8px; margin-top: 8px; }
+.team__title { font-size: 13px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); }
+.team__title + p { color: var(--ink-2); }
+@media (max-width: 900px) { .founder { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 520px) { .career li { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
 
 /* geography */
@@ -715,5 +713,6 @@ html[lang="de"] :is(dd, .doc__title, .doc__sub) { -webkit-hyphens: auto; hyphens
 html[lang="kk"] { --f-display: "Literata GC", Georgia, "Times New Roman", serif; }
 html[lang="kk"] :is(.display, .h2, .proj__title, .pp__title, .reg__t, .pnav__t, .rq__title, .done h3, .menu nav a, .letter__body .salute) { font-weight: 340; }
 html[lang="kk"] :is(.h3, .letter__sign b) { font-weight: 450; }
-html[lang="kk"] :is(.fact__num, .year__n) { font-weight: 270; }
+html[lang="kk"] .year__n { font-weight: 270; }
+html[lang="kk"] .dates__year { font-weight: 340; }
 html[lang="kk"] :is(p, li, dd, .doc__title, .doc__sub, .reg__t, .proj__title, .pp__title) { overflow-wrap: break-word; }

@@ -80,7 +80,7 @@ P = [
         ('p', 'Визит делегации в Баварию пройдет с 29 июня (прибытие, первый день программы) по 4 июля 2026 года (день отъезда казахстанских участников). Расходы по организации программы визита, сопроводительных, транспортных и переводческих услуг, питания, проживания в трехзвездочных отелях берет на себя приглашающая сторона - федеральная земля Бавария. Участники оплачивают свои авиабилеты, а также организационный взнос из расчета 50 евро за день программы, то есть 250 евро на человека.'),
         ('p', 'Максимальное количество участников - 15 предприятий/человек. Делегация формируется баварской стороной по времени поступления анкет-заявок. По окончании делового визита члены делегации получат сертификат об участии в программе поддержки предпринимательства и повышения квалификации Bayern International.'),
         ('callout', 'В случае интереса к участию просим внимательно и полностью заполнить прилагаемую анкету-заявку и выслать ее на адреса gaco@galaconsult.kz, info@galaconsult.kz не позднее <b>10 апреля 2026 г.</b>'),
-        ('p', 'При возникновении вопросов мы всегда в Вашем распоряжении: <span class="nw">+7 701 550-99-00</span> (Галия Джунусалиева), <span class="nw">+7 701 259-84-37</span> (Алмагуль Шакиева), <span class="nw">+7 777 026-30-08</span> (Сергей Карпенко).'),
+        ('p', 'При возникновении вопросов мы всегда в Вашем распоряжении: <span class="nw">+7 701 304-28-18</span> (Галия Джунусалиева), <span class="nw">+7 701 259-84-37</span> (Алмагуль Шакиева), <span class="nw">+7 777 026-30-08</span> (Сергей Карпенко).'),
       ],
       docs=[('Анкета-заявка', 'docx', None, 'Прислать до 10 апреля 2026'), ('Программа поездки', 'pdf', None, 'Маршрут, компании и объекты по дням')]),
  dict(slug='ifat-eurasia-2025', type='Выставка', flag='tr', place='Стамбул, Турция', dates='15-17 мая 2025', year=2025, end='2025-05-17',
@@ -100,13 +100,13 @@ P = [
         ('p', 'Участники самостоятельно несут расходы по визиту (авиабилеты, отель).'),
         ('h3', 'Организаторы в Стамбуле и Мюнхене обеспечивают'),
         ('ul', ['Предоставление необходимой информации', 'Приветственную встречу в центре встречи делегаций', 'Групповую фотографию', 'Бесплатный бейдж на время выставки, подготовленный заранее, чтобы не ждать у стоек регистрации', 'Организованные встречи с выбранными экспонентами в соответствии с пожеланиями группы']),
-        ('p', 'Надеемся на участие в делегации предпринимателей и специалистов соответствующих отраслей, организаций. В случае возникновения вопросов мы всегда в Вашем распоряжении: <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>, <a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a>, тел. <span class="nw">+7 701 550-99-00</span>.'),
+        ('p', 'Надеемся на участие в делегации предпринимателей и специалистов соответствующих отраслей, организаций. В случае возникновения вопросов мы всегда в Вашем распоряжении: <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>, <a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a>, тел. <span class="nw">+7 701 304-28-18</span>.'),
         ('callout', 'В случае интереса к посещению выставки просим заполнить анкету (приложение 1) и прислать ее нам не позднее <b>15 апреля 2025 г.</b> по адресам: gaco@galaconsult.kz, info@galaconsult.kz.'),
       ],
       sign=True,
       docs=[('Анкета участника', 'docx', None, 'Прислать до 15 апреля 2025'), ('Информационное письмо Messe München', 'doc', 'https://docs.google.com/document/d/1VPnnxDELblZDQBxUPQEtDhqeqQLTDbPx/edit', 'Описание проекта и программы визита')]),
  dict(slug='bavaria-medical-2024', type='Деловая поездка', flag='de', place='Бавария, Германия', dates='1-6 июля 2024', year=2024, end='2024-07-06',
-      short='Медицинская отрасль: торговля, менеджмент, сервис',
+      short='Медицинская техника: торговля, менеджмент, сервис',
       title='Поездка в Баварию для казахстанских медицинских предприятий и предприятий, обслуживающих медицинскую отрасль (торговля, менеджмент, сервис)',
       theme=None, topic='Медицинская отрасль', program='Bayern - Fit for Partnership; Bayern International, em&amp;s GmbH', deadline='10 апреля 2024',
       body=[
@@ -120,7 +120,7 @@ P = [
         ('callout', 'В случае интереса к участию просим заполнить прилагаемую анкету и выслать ее на gaco@galaconsult.kz, gsh@galaconsult.kz до <b>10 апреля 2024 года</b>.'),
         ('p', 'Анкеты будут переведены на немецкий язык и направлены в Баварию для принятия решения об участии каждого кандидата. Просим учесть, что группа будет сформирована до 20 апреля 2024 года. В связи с ограниченностью мест приоритет отдается согласно дате получения заявок. Раннее формирование делегации связано также с тем, что оформление виз в Германию требует значительного времени, а участникам в случае положительного решения необходимо будет как можно раньше забронировать авиабилеты, так как их стоимость растет по мере приближения даты вылета.'),
         ('p', 'Взнос за участие в программе делегации в размере 225 евро оплачивается перечислением по получении счета, в тенге по актуальному курсу.'),
-        ('p', 'Директор Г. С. Джунусалиева: <span class="nw">+7 701 550-99-00</span>, <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>. Также за дополнительной информацией и с вопросами: <span class="nw">+7 701 259-84-37</span> (Алмагуль Шакиева), <span class="nw">+7 777 026-30-08</span> (Сергей Карпенко), <span class="nw">+7 775 888-91-30</span> (Айганым Джунусалиева).'),
+        ('p', 'Директор Г. С. Джунусалиева: <span class="nw">+7 701 304-28-18</span>, <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>. Также за дополнительной информацией и с вопросами: <span class="nw">+7 701 259-84-37</span> (Алмагуль Шакиева), <span class="nw">+7 777 026-30-08</span> (Сергей Карпенко), <span class="nw">+7 775 888-91-30</span> (Айганым Джунусалиева).'),
       ],
       sign=True,
       docs=[('Анкета участника', 'docx', None, 'Прислать до 10 апреля 2024'), ('Программа поездки', 'pdf', None, 'Маршрут, компании и объекты по дням')]),
@@ -156,7 +156,7 @@ P = [
         ('ul', ['Ведущая выставка Евразии по экологическим технологиям: широкий ассортимент продукции, включая управление водными ресурсами, очистку сточных вод, сбор, утилизацию и переработку отходов, - все под одной крышей', 'Ворота в Евразийский регион: географическое положение Стамбула превратило его в деловой центр региона, который связывает торговлю между Востоком и Западом и предоставляет уникальные возможности для изучения новых рынков', 'Программа поддержки высокого уровня: семинары и групповые дискуссии для интересных сетевых возможностей и передачи знаний', 'Центр встречи для лиц, принимающих решения: возможность для предпринимателей познакомиться с лицами, принимающими решения в отрасли, и представить свои продукты и решения непосредственно представителям государственных и местных органов власти, а также широкому кругу промышленных и коммерческих пользователей', 'Безвизовый режим между Казахстаном и Турцией, значительно упрощающий как сам визит, так и его организацию и позволяющий экономить средства']),
         ('h3', 'Условия участия'),
         ('p', 'Участники самостоятельно несут расходы по визиту (авиабилеты, отель), организаторы обеспечивают программу, переводчика, сопровождение в Стамбуле.'),
-        ('p', 'Надеемся на участие в делегации предпринимателей и специалистов соответствующих отраслей, организаций. В случае возникновения вопросов мы всегда в Вашем распоряжении: тел. <span class="nw">+7 727 250-11-39</span>, <span class="nw">+7 701 714-93-17</span>, <span class="nw">+7 701 550-99-00</span>.'),
+        ('p', 'Надеемся на участие в делегации предпринимателей и специалистов соответствующих отраслей, организаций. В случае возникновения вопросов мы всегда в Вашем распоряжении: тел. <span class="nw">+7 701 714-93-17</span>, <span class="nw">+7 701 304-28-18</span>.'),
         ('callout', 'В случае интереса к посещению выставки IFAT Eurasia 2023 просим заполнить анкету и прислать ее нам до <b>31 марта 2023 г.</b> по адресам: gaco@galaconsult.kz, info@galaconsult.kz.'),
       ],
       sign=True,
@@ -209,7 +209,7 @@ P = [
         ('p', 'Сегодня мы совместно с деловым партнером из Берлина, фирмой COMMIT, начинаем подготовку нашего нового проекта в рамках баварской программы «Bayern - Fit for Partnership».'),
         ('p', 'Министерство экономики, регионального развития и энергетики земли Бавария сердечно приглашает Вас принять участие в трехдневной виртуальной программе «Bayern - Fit for Partnership» 1-3 декабря 2021 года.'),
         ('p', 'Целью программы является ознакомление с инновационными технологиями и углубление сотрудничества между фирмами Баварии, Казахстана и Узбекистана по теме «Логистика и производство пищевых продуктов 4.0».'),
-        ('p', 'В случае возникновения вопросов и необходимости дополнительной информации мы всегда в Вашем распоряжении: <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>, <a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a>, тел. <span class="nw">+7 701 550-99-00</span>.'),
+        ('p', 'В случае возникновения вопросов и необходимости дополнительной информации мы всегда в Вашем распоряжении: <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>, <a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a>, тел. <span class="nw">+7 701 304-28-18</span>.'),
         ('callout', 'Приглашение и заявка на участие - в приложениях к письму.'),
       ],
       docs=[('Приглашение', 'pdf', None, 'Программа 1-3 декабря 2021'), ('Заявка на участие', 'docx', None, 'Заполнить и прислать на gaco@galaconsult.kz')]),
@@ -251,7 +251,7 @@ P_DE = {
         ('p', 'Die Reise findet vom 29. Juni (Anreise, erster Programmtag) bis 4. Juli 2026 (Abreise der kasachischen Teilnehmer) statt. Die Kosten für das Besuchsprogramm, Begleitung, Transport und Dolmetschen, Verpflegung und Unterkunft in Drei-Sterne-Hotels trägt die einladende Seite, der Freistaat Bayern. Die Teilnehmer zahlen ihre Flugtickets sowie einen Organisationsbeitrag von 50 Euro pro Programmtag, also 250 Euro pro Person.'),
         ('p', 'Die Teilnehmerzahl ist auf 15 Unternehmen/Personen begrenzt. Die Delegation wird von der bayerischen Seite in der Reihenfolge des Eingangs der Anmeldungen gebildet. Nach Abschluss der Reise erhalten die Delegationsmitglieder ein Teilnahmezertifikat des Förder- und Qualifizierungsprogramms von Bayern International.'),
         ('callout', 'Bei Interesse bitten wir Sie, das beigefügte Anmeldeformular sorgfältig und vollständig auszufüllen und bis spätestens <b>10. April 2026</b> an gaco@galaconsult.kz und info@galaconsult.kz zu senden.'),
-        ('p', 'Bei Fragen stehen wir Ihnen jederzeit gern zur Verfügung: <span class="nw">+7 701 550-99-00</span> (Galia Shunussalieva), <span class="nw">+7 701 259-84-37</span> (Almagul Shakieva), <span class="nw">+7 777 026-30-08</span> (Sergey Karpenko).'),
+        ('p', 'Bei Fragen stehen wir Ihnen jederzeit gern zur Verfügung: <span class="nw">+7 701 304-28-18</span> (Galia Shunussalieva), <span class="nw">+7 701 259-84-37</span> (Almagul Shakieva), <span class="nw">+7 777 026-30-08</span> (Sergey Karpenko).'),
       ],
       docs=[('Anmeldeformular', 'Bis 10. April 2026 zurücksenden'), ('Reiseprogramm', 'Route, Unternehmen und Besichtigungen nach Tagen')]),
  'ifat-eurasia-2025': dict(type='Messe', place='Istanbul, Türkei', dates='15.-17. Mai 2025',
@@ -270,12 +270,12 @@ P_DE = {
         ('p', 'Die Teilnehmer tragen die Reisekosten (Flug, Hotel) selbst.'),
         ('h3', 'Leistungen der Organisatoren in Istanbul und München'),
         ('ul', ['Bereitstellung aller notwendigen Informationen', 'Empfang im Delegationszentrum der Messe', 'Gruppenfoto', 'Kostenloser, vorab vorbereiteter Messeausweis für die gesamte Messedauer, damit Sie nicht an den Registrierungsschaltern warten müssen', 'Organisierte Treffen mit ausgewählten Ausstellern nach den Wünschen der Gruppe']),
-        ('p', 'Wir freuen uns auf die Teilnahme von Unternehmern, Fachleuten und Organisationen der jeweiligen Branchen an der Delegation. Bei Fragen stehen wir Ihnen jederzeit gern zur Verfügung: <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>, <a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a>, Tel. <span class="nw">+7 701 550-99-00</span>.'),
+        ('p', 'Wir freuen uns auf die Teilnahme von Unternehmern, Fachleuten und Organisationen der jeweiligen Branchen an der Delegation. Bei Fragen stehen wir Ihnen jederzeit gern zur Verfügung: <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>, <a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a>, Tel. <span class="nw">+7 701 304-28-18</span>.'),
         ('callout', 'Bei Interesse an einem Messebesuch bitten wir Sie, den Fragebogen (Anlage 1) auszufüllen und bis spätestens <b>15. April 2025</b> an gaco@galaconsult.kz und info@galaconsult.kz zu senden.'),
       ],
       docs=[('Teilnehmerfragebogen', 'Bis 15. April 2025 zurücksenden'), ('Informationsschreiben der Messe München', 'Projektbeschreibung und Besuchsprogramm')]),
  'bavaria-medical-2024': dict(type='Geschäftsreise', place='Bayern, Deutschland', dates='1.-6. Juli 2024',
-      short='Medizinbranche: Handel, Management, Service',
+      short='Medizintechnik: Handel, Management, Service',
       title='Reise nach Bayern für kasachische Medizinunternehmen und Unternehmen mit Dienstleistungen für die Medizinbranche (Handel, Management, Service)',
       topic='Medizinbranche', deadline='10. April 2024',
       body=[
@@ -289,7 +289,7 @@ P_DE = {
         ('callout', 'Bei Interesse bitten wir Sie, den beigefügten Fragebogen auszufüllen und bis zum <b>10. April 2024</b> an gaco@galaconsult.kz und gsh@galaconsult.kz zu senden.'),
         ('p', 'Die Fragebögen werden ins Deutsche übersetzt und nach Bayern übermittelt, wo über die Teilnahme jedes Kandidaten entschieden wird. Bitte beachten Sie, dass die Gruppe bis zum 20. April 2024 gebildet wird. Da die Plätze begrenzt sind, werden die Anmeldungen in der Reihenfolge ihres Eingangs berücksichtigt. Die frühe Bildung der Delegation ist auch deshalb nötig, weil die Visabeantragung für Deutschland viel Zeit erfordert und die Teilnehmer bei einer Zusage ihre Flüge so früh wie möglich buchen sollten, da die Preise mit näher rückendem Abflugtermin steigen.'),
         ('p', 'Der Teilnahmebeitrag von 225 Euro wird nach Erhalt der Rechnung per Überweisung in Tenge zum aktuellen Kurs bezahlt.'),
-        ('p', 'Direktorin G. S. Shunussalieva: <span class="nw">+7 701 550-99-00</span>, <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>. Für weitere Informationen und bei Fragen außerdem: <span class="nw">+7 701 259-84-37</span> (Almagul Shakieva), <span class="nw">+7 777 026-30-08</span> (Sergey Karpenko), <span class="nw">+7 775 888-91-30</span> (Aiganym Dzhunusalieva).'),
+        ('p', 'Direktorin G. S. Shunussalieva: <span class="nw">+7 701 304-28-18</span>, <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>. Für weitere Informationen und bei Fragen außerdem: <span class="nw">+7 701 259-84-37</span> (Almagul Shakieva), <span class="nw">+7 777 026-30-08</span> (Sergey Karpenko), <span class="nw">+7 775 888-91-30</span> (Aiganym Dzhunusalieva).'),
       ],
       docs=[('Teilnehmerfragebogen', 'Bis 10. April 2024 zurücksenden'), ('Reiseprogramm', 'Route, Unternehmen und Besichtigungen nach Tagen')]),
  'bavaria-packaging-2023': dict(type='Informationsreise', place='Bayern, Deutschland', dates='19.-23. Juni 2023',
@@ -323,7 +323,7 @@ P_DE = {
         ('ul', ['Die führende Fachmesse für Umwelttechnologien in Eurasien: ein breites Angebot, darunter Wasserressourcenmanagement, Abwasserbehandlung sowie Sammlung, Entsorgung und Verwertung von Abfällen - alles unter einem Dach', 'Tor zur eurasischen Region: Seine geografische Lage hat Istanbul zum Geschäftszentrum der Region gemacht, das den Handel zwischen Ost und West verbindet und einzigartige Möglichkeiten zur Erschließung neuer Märkte bietet', 'Hochkarätiges Rahmenprogramm: Seminare und Podiumsdiskussionen für interessantes Networking und Wissenstransfer', 'Treffpunkt für Entscheider: Unternehmer können Entscheidungsträger der Branche kennenlernen und ihre Produkte und Lösungen direkt Vertretern staatlicher und lokaler Behörden sowie einem breiten Kreis von Industrie- und Gewerbekunden vorstellen', 'Visafreiheit zwischen Kasachstan und der Türkei, die den Besuch und seine Organisation deutlich vereinfacht und Kosten spart']),
         ('h3', 'Teilnahmebedingungen'),
         ('p', 'Die Teilnehmer tragen die Reisekosten (Flug, Hotel) selbst, die Organisatoren stellen das Programm, einen Dolmetscher und die Begleitung in Istanbul.'),
-        ('p', 'Wir freuen uns auf die Teilnahme von Unternehmern, Fachleuten und Organisationen der jeweiligen Branchen an der Delegation. Bei Fragen stehen wir Ihnen jederzeit gern zur Verfügung: Tel. <span class="nw">+7 727 250-11-39</span>, <span class="nw">+7 701 714-93-17</span>, <span class="nw">+7 701 550-99-00</span>.'),
+        ('p', 'Wir freuen uns auf die Teilnahme von Unternehmern, Fachleuten und Organisationen der jeweiligen Branchen an der Delegation. Bei Fragen stehen wir Ihnen jederzeit gern zur Verfügung: Tel. <span class="nw">+7 701 714-93-17</span>, <span class="nw">+7 701 304-28-18</span>.'),
         ('callout', 'Bei Interesse an einem Besuch der IFAT Eurasia 2023 bitten wir Sie, den Fragebogen auszufüllen und bis zum <b>31. März 2023</b> an gaco@galaconsult.kz und info@galaconsult.kz zu senden.'),
       ],
       docs=[('Teilnehmerfragebogen', 'Bis 31. März 2023 zurücksenden'), ('Besuchsprogramm', 'Messe, Treffen und Exkursionen')]),
@@ -373,7 +373,7 @@ P_DE = {
         ('p', 'heute beginnen wir gemeinsam mit unserem Geschäftspartner aus Berlin, der Firma COMMIT, mit der Vorbereitung unseres neuen Projekts im Rahmen des bayerischen Programms „Bayern - Fit for Partnership“.'),
         ('p', 'Das Bayerische Staatsministerium für Wirtschaft, Landesentwicklung und Energie lädt Sie herzlich ein, vom 1. bis 3. Dezember 2021 am dreitägigen virtuellen Programm „Bayern - Fit for Partnership“ teilzunehmen.'),
         ('p', 'Ziel des Programms ist es, innovative Technologien kennenzulernen und die Zusammenarbeit zwischen Unternehmen aus Bayern, Kasachstan und Usbekistan zum Thema „Logistik und Lebensmittelproduktion 4.0“ zu vertiefen.'),
-        ('p', 'Bei Fragen und für weitere Informationen stehen wir Ihnen jederzeit gern zur Verfügung: <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>, <a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a>, Tel. <span class="nw">+7 701 550-99-00</span>.'),
+        ('p', 'Bei Fragen und für weitere Informationen stehen wir Ihnen jederzeit gern zur Verfügung: <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>, <a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a>, Tel. <span class="nw">+7 701 304-28-18</span>.'),
         ('callout', 'Die Einladung und das Anmeldeformular liegen diesem Schreiben als Anlagen bei.'),
       ],
       docs=[('Einladung', 'Programm vom 1.-3. Dezember 2021'), ('Anmeldeformular', 'Ausfüllen und an gaco@galaconsult.kz senden')]),
@@ -464,7 +464,7 @@ def header(d, home, rel):
     <a class="brand" href="{r}index.html" aria-label="{t('ГалА-Консалт, на главную', 'GalA-Consult, zur Startseite')}"><img src="{d}assets/img/logo-h.svg" alt="GalA-Consult · ГалА-Консалт" width="256" height="64"></a>
     <nav class="nav" aria-label="{t('Разделы', 'Bereiche')}">{links}</nav>
     <div class="hdr__cta">
-      <a class="hdr__tel" href="tel:+77015509900">+7 701 550-99-00</a>
+      <a class="hdr__tel" href="tel:+77013042818">+7 701 304-28-18</a>
       <a class="btn btn--sm" href="{pre}#contacts" data-form>{t('Связаться', 'Kontakt aufnehmen')}</a>
     </div>
     {lang_switch(d, rel)}
@@ -474,8 +474,8 @@ def header(d, home, rel):
 <div class="menu" id="menu" hidden>
   <nav aria-label="{t('Меню', 'Menü')}">{links}</nav>
   <div class="menu__contacts">
-    <a href="tel:+77015509900">+7 701 550-99-00</a>
-    <a href="tel:+77272501139">+7 727 250-11-39</a>
+    <a href="tel:+77013042818">+7 701 304-28-18</a>
+    <a href="tel:+77017149317">+7 701 714-93-17</a>
     <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>
     <span>{t(*ADDR)}</span>
   </div>
@@ -493,8 +493,8 @@ def footer(d, home):
       <div class="ftr__col"><h3>{t('Разделы', 'Bereiche')}</h3>{links}</div>
       <div class="ftr__col"><h3>{t('Контакты', 'Kontakt')}</h3>
         <span>{t(*ADDR)}, {t('Казахстан', 'Kasachstan')}</span>
-        <a href="tel:+77272501139">+7 727 250-11-39</a>
-        <a href="tel:+77015509900">+7 701 550-99-00</a>
+        <a href="tel:+77013042818">+7 701 304-28-18</a>
+        <a href="tel:+77017149317">+7 701 714-93-17</a>
         <a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a>
         <a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a>
       </div>
@@ -541,7 +541,7 @@ def request_modal(d):
       <div class="field" id="f-contact"><input id="rq-contact" name="contact" type="text" autocomplete="tel" placeholder=" " required><label for="rq-contact">{t('Телефон или email', 'Telefon oder E-Mail')}</label><span class="field__err" aria-live="polite"></span></div>
       <fieldset class="topics" id="f-topic"><legend>{t('Тема запроса', 'Thema Ihrer Anfrage')}</legend><div class="topics__list">{chips}</div><span class="topics__err" aria-live="polite"></span></fieldset>
       <button class="btn rq__send" type="submit">{t('Отправить запрос', 'Anfrage senden')}</button>
-      <p class="rq__fail" hidden>{t('Не получилось отправить запрос. Позвоните нам: <span class="nw">+7 701 550-99-00</span> или напишите на gaco@galaconsult.kz', 'Die Anfrage konnte nicht gesendet werden. Rufen Sie uns an: <span class="nw">+7 701 550-99-00</span> oder schreiben Sie an gaco@galaconsult.kz')}</p>
+      <p class="rq__fail" hidden>{t('Не получилось отправить запрос. Позвоните нам: <span class="nw">+7 701 304-28-18</span> или напишите на gaco@galaconsult.kz', 'Die Anfrage konnte nicht gesendet werden. Rufen Sie uns an: <span class="nw">+7 701 304-28-18</span> oder schreiben Sie an gaco@galaconsult.kz')}</p>
       <p class="rq__note">{t('Отправляя запрос, вы соглашаетесь на обработку указанных данных для ответа на него.', 'Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Angaben zur Beantwortung Ihrer Anfrage zu.')}</p>
     </form>
     <div class="fx" aria-hidden="true">
@@ -640,18 +640,19 @@ def home():
     # the four services; each opens the form with its topic (TOPICS[n]) chosen
     svc = [
         ('law', t('Право, налоги, таможня', 'Recht, Steuern, Zoll'),
-         [t('Консультации, информация и услуги по юридическим, налоговым, таможенным и общим экономическим вопросам', 'Beratung, Informationen und Dienstleistungen zu Rechts-, Steuer-, Zoll- und allgemeinen Wirtschaftsfragen'),
+         [t('Консультации, информация и услуги по юридическим, налоговым, таможенным и общим экономическим вопросам внешнеэкономической деятельности, импорта и экспорта', 'Beratung, Informationen und Dienstleistungen zu Rechts-, Steuer-, Zoll- und allgemeinen Wirtschaftsfragen der Außenwirtschaft, des Imports und des Exports'),
           t('Сопровождение проектов', 'Projektbegleitung')]),
         ('market', t('Выход на рынок', 'Markteintritt'),
-         [t('Создание фирм, представление фирм на рынке', 'Firmengründungen, Präsentation von Unternehmen auf dem Markt'), t('Маркетинговые исследования', 'Marktforschung'),
+         [t('Содействие при создании фирм, представительств и филиалов иностранных компаний, содействие при вхождении на новые рынки', 'Unterstützung bei der Gründung von Firmen, Repräsentanzen und Niederlassungen ausländischer Unternehmen sowie beim Eintritt in neue Märkte'), t('Маркетинговые исследования', 'Marktforschung'),
           t('Межкультурная информация', 'Interkulturelle Informationen')]),
         ('globe', t('Международные связи', 'Internationale Kontakte'),
          [t('Содействие в установлении деловых контактов между предпринимателями Казахстана и иностранными партнерами', 'Unterstützung beim Aufbau von Geschäftskontakten zwischen Unternehmern aus Kasachstan und ausländischen Partnern'),
           t('Организация, сопровождение экономических делегаций', 'Organisation und Begleitung von Wirtschaftsdelegationen'),
-          t('Поддержка казахстанских компаний в сотрудничестве с партнерами из Германии, Австрии, Швейцарии и Южного Тироля', 'Unterstützung kasachischer Unternehmen bei der Zusammenarbeit mit Partnern aus Deutschland, Österreich, der Schweiz und Südtirol')]),
+          t('Поддержка казахстанских компаний в сотрудничестве с партнерами из Германии, Австрии, Швейцарии, Южного Тироля и других немецкоязычных регионов Европы, а также содействие иностранным компаниям при поиске деловых партнеров в Казахстане и Центральной Азии', 'Unterstützung kasachischer Unternehmen bei der Zusammenarbeit mit Partnern aus Deutschland, Österreich, der Schweiz, Südtirol und anderen deutschsprachigen Regionen Europas sowie Unterstützung ausländischer Unternehmen bei der Suche nach Geschäftspartnern in Kasachstan und Zentralasien')]),
         ('talk', t('Обучение и коммуникация', 'Schulung und Kommunikation'),
-         [t('Организация семинаров по вопросам деловой активности и ведения бизнеса в Казахстане', 'Organisation von Seminaren zu Geschäftstätigkeit und Unternehmensführung in Kasachstan'),
-          t('Обучение кадров', 'Personalschulung'), t('Устные и письменные переводы', 'Dolmetschen und Übersetzungen')]),
+         [t('Организация семинаров, симпозиумов по вопросам деловой активности и ведения бизнеса в Казахстане', 'Organisation von Seminaren und Symposien zu Geschäftstätigkeit und Unternehmensführung in Kasachstan'),
+          t('Представление деятельности, услуг, продукции иностранных компаний на рынке Казахстана и других стран Центральной Азии', 'Präsentation der Tätigkeit, Dienstleistungen und Produkte ausländischer Unternehmen auf dem Markt Kasachstans und anderer Länder Zentralasiens'),
+          t('Устные и письменные переводы', 'Dolmetschen und Übersetzungen')]),
     ]
     svc_html = ''.join(f'<article class="svc"><div class="svc__top"><span class="coin">{I[i]}</span><h3 class="h3">{title}</h3></div><ul class="svc__list">{"".join(f"<li>{x}</li>" for x in items)}</ul><button class="svc__cta" type="button" data-form data-topic="{TOPICS[n][0]}">{t("Обсудить задачу", "Anliegen besprechen")}{I["arrow"]}</button></article>' for n, (i, title, items) in enumerate(svc))
     approach = [('book', t('Глубокие знания и практический опыт в правовой, экономической и социально-политической областях', 'Fundierte Kenntnisse und praktische Erfahrung in rechtlichen, wirtschaftlichen und gesellschaftspolitischen Fragen')),
@@ -661,10 +662,10 @@ def home():
     # German names as the AHK Central Asia gives them: Repräsentanz (from 1994), Delegation ... für Zentralasien (from 2008),
     # Deutscher Wirtschaftsklub (DWK), since 2012 Verband der Deutschen Wirtschaft in der Republik Kasachstan (VDW)
     career = [(t('с 1994 года', 'ab 1994'), t('Глава Представительства Германской экономики в Казахстане', 'Leiterin der Repräsentanz der Deutschen Wirtschaft in Kasachstan')),
-              ('', t('Заместитель главы Представительства Германской экономики в Центральной Азии', 'Stellvertretende Leiterin der Delegation der Deutschen Wirtschaft für Zentralasien')),
-              ('', t('Генеральный директор сервисной компании ТОО «DEinternational Kasachstan»', 'Geschäftsführerin der Servicegesellschaft DEinternational Kasachstan TOO')),
-              (t('с основания', 'seit der Gründung'), t('Член Правления Клуба Германской экономики, затем Союза Германской экономики в Республике Казахстан', 'Vorstandsmitglied des Deutschen Wirtschaftsklubs, später des Verbands der Deutschen Wirtschaft in der Republik Kasachstan')),
-              (t('сегодня', 'heute'), t('Учредитель и управляющий партнер ТОО «ГалА-Консалт»', 'Gründerin und geschäftsführende Gesellschafterin der GalA-Consult&nbsp;LLP'))]
+              (t('с 2008 года', 'ab 2008'), t('Заместитель главы Представительства Германской экономики в Центральной Азии, генеральный директор сервисной компании ТОО «DEinternational Kasachstan»', 'Stellvertretende Leiterin der Delegation der Deutschen Wirtschaft für Zentralasien, Geschäftsführerin der Servicegesellschaft DEinternational Kasachstan TOO')),
+              ('1994', t('Соучредитель Клуба Германской экономики, впоследствии Союза Германской экономики в Республике Казахстан', 'Mitgründerin des Deutschen Wirtschaftsklubs, später des Verbands der Deutschen Wirtschaft in der Republik Kasachstan')),
+              ('1997', t('Награждена орденом «Bundesverdienstkreuz am Bande», Германия', 'Ausgezeichnet mit dem Bundesverdienstkreuz am Bande, Deutschland')),
+              ('2017', t('Завершила деятельность в Представительстве Германской экономики в Центральной Азии и возобновила деятельность в качестве управляющего участника ТОО «ГалА-Консалт»', 'Beendete ihre Tätigkeit bei der Delegation der Deutschen Wirtschaft für Zentralasien und ist seitdem wieder geschäftsführende Gesellschafterin der GalA-Consult&nbsp;LLP'))]
     career_html = ''.join(f'<li><span class="career__when">{w}</span><span class="career__what">{x}</span></li>' for w, x in career)
     cards = ''.join(proj_card(p, d) for p in recent)
     copy = t('Скопировать', 'Kopieren')
@@ -673,18 +674,17 @@ def home():
   <div class="wrap hero__grid">
     <div class="hero__text">
       <p class="label rise">{t('Консалтинговая компания · Алматы', 'Beratungsunternehmen · Almaty')}</p>
-      <h1 class="display rise rise-2">{t('Консалтинг и деловые связи между Казахстаном и немецкоязычной Европой', 'Beratung und Geschäfts&shy;beziehungen zwischen Kasachstan und dem deutsch&shy;sprachigen Raum')}</h1>
+      <h1 class="display display--long rise rise-2">{t('Консалтинг и содействие в развитии деловых связей между казахстанскими и иностранными компаниями', 'Beratung und Unterstützung beim Ausbau von Geschäfts&shy;beziehungen zwischen kasachischen und ausländischen Unternehmen')}</h1>
       <p class="lead rise rise-3">{t('Консультируем казахстанские и иностранные компании по юридическим, налоговым, таможенным и общеэкономическим вопросам. Организуем деловые поездки, делегации и посещение отраслевых выставок в Германии, Австрии, Швейцарии и других странах.', 'Wir beraten kasachische und ausländische Unternehmen in Rechts-, Steuer-, Zoll- und allgemeinen Wirtschaftsfragen. Wir organisieren Geschäftsreisen, Delegationen und Besuche von Fachmessen in Deutschland, Österreich, der Schweiz und weiteren Ländern.')}</p>
       <div class="hero__actions rise rise-4"><a class="btn" href="#contacts" data-form>{t('Получить консультацию', 'Beratung anfragen')}</a><a class="link-arrow" href="#projects">{t('Смотреть проекты', 'Projekte ansehen')}{I['arrow']}</a></div>
     </div>
     {hero_lockup()}
   </div>
   <div class="wrap facts rise rise-5">
-    <div class="facts__row">
-      <div class="fact"><span class="fact__num">1994</span><p class="fact__txt">{t('С этого года основатель компании возглавляла Представительство Германской экономики в Казахстане', 'Ab diesem Jahr leitete die Gründerin des Unternehmens die Repräsentanz der Deutschen Wirtschaft in Kasachstan')}</p></div>
-      <div class="fact"><span class="fact__num">23</span><p class="fact__txt">{t('года деятельности основателя в области казахстанско-германских экономических отношений', 'Jahre Tätigkeit der Gründerin in den kasachisch-deutschen Wirtschaftsbeziehungen')}</p></div>
-      <div class="fact"><span class="fact__num">4</span><p class="fact__txt">{t('немецкоязычных направления: Германия, Австрия, Швейцария, Южный Тироль', 'deutschsprachige Zielregionen: Deutschland, Österreich, Schweiz, Südtirol')}</p></div>
-    </div>
+    <ol class="dates" aria-label="{t('История компании', 'Firmengeschichte')}">
+      <li><span class="dates__year">1994</span><p class="dates__txt">{t('Создание компании ТОО&nbsp;«КВЭС&nbsp;Консалт» (Компания по внешнеэкономическим связям)', 'Gründung der KVES&nbsp;Consult&nbsp;TOO (Firma für Außenwirtschafts&shy;beziehungen)')}</p></li>
+      <li><span class="dates__year">2016</span><p class="dates__txt">{t('Перерегистрация фирмы в связи с изменением наименования на ТОО&nbsp;«ГалА-Консалт»', 'Neuregistrierung der Firma nach der Umbenennung in GalA-Consult&nbsp;TOO')}</p></li>
+    </ol>
   </div>
 </section>
 
@@ -703,28 +703,30 @@ def home():
 
 <section class="sec" id="services">
   <div class="wrap">
-    <div class="sec__head"><p class="label">{t('Услуги', 'Leistungen')}</p><h2 class="h2">{t('Чем мы помогаем компаниям', 'Wobei wir Unternehmen unterstützen')}</h2><p class="sec__note">{t('Работаем в формате комплексного сопровождения или берем отдельную задачу, от разовой консультации до организации делегации.', 'Wir begleiten Unternehmen umfassend oder übernehmen einzelne Aufgaben, von der Einzelberatung bis zur Organisation einer Delegation.')}</p></div>
+    <div class="sec__head"><p class="label">{t('Услуги', 'Leistungen')}</p><h2 class="h2">{t('Чем мы помогаем компаниям', 'Wobei wir Unternehmen unterstützen')}</h2><p class="sec__note">{t('Комплексное сопровождение проектов или выполнение отдельных задач, от разовой консультации до организации внешнеэкономических мероприятий или бизнес-делегаций.', 'Umfassende Begleitung von Projekten oder einzelne Aufgaben, von der Einzelberatung bis zur Organisation von Außenwirtschafts&shy;veranstaltungen oder Unternehmer&shy;delegationen.')}</p></div>
     <div class="svc-grid">{svc_html}</div>
   </div>
 </section>
 
 <section class="sec sec--paper" id="projects">
   <div class="wrap">
-    <div class="sec__head sec__head--row"><div><p class="label">{t('Проекты', 'Projekte')}</p><h2 class="h2">{t('Деловые поездки, делегации и выставки', 'Geschäftsreisen, Delegationen und Messen')}</h2></div><a class="link-arrow" href="projects/index.html">{t('Проекты', 'Alle Projekte')}{I['arrow']}</a></div>
+    <div class="sec__head sec__head--row"><div><p class="label">{t('Проекты', 'Projekte')}</p><h2 class="h2">{t('Деловые поездки, делегации и выставки', 'Geschäftsreisen, Delegationen und Messen')}</h2></div><a class="link-arrow" href="projects/index.html">{t('Примеры выполненных проектов', 'Beispiele abgeschlossener Projekte')}{I['arrow']}</a></div>
     <div class="proj-grid">{cards}</div>
   </div>
 </section>
 
 <section class="sec" id="management">
   <div class="wrap founder">
-    <figure class="photo settle"><div class="photo__frame"><img src="{d}assets/img/founder.jpg" alt="{t('Доктор Галия Джунусалиева на деловом заседании', 'Dr. Galia Shunussalieva bei einer Geschäftssitzung')}" width="630" height="575" loading="lazy"></div><figcaption>{t('Доктор Галия Сагадиновна Джунусалиева', 'Dr. Galia Sagadinowna Shunussalieva')}</figcaption></figure>
+    <div class="founder__head">
+      <p class="label">{t('Руководство и команда', 'Geschäftsführung und Team')}</p>
+      <h2 class="h2">{t('Д-р Галия Джунусалиева', 'Dr. Galia Shunussalieva')}</h2>
+      <p class="founder__role">{t('Управляющий участник', 'Geschäftsführende Gesellschafterin')}</p>
+      <p class="founder__edu"><b>{t('Образование:', 'Ausbildung:')}</b> {t('германистика, экономика, право', 'Germanistik, Wirtschaft, Recht')}</p>
+      <p class="lead">{t('Опыт и специальные знания в области внешнеэкономической деятельности.', 'Erfahrung und Fachkenntnisse im Bereich der Außenwirtschaft.')}</p>
+    </div>
     <div class="founder__body">
-      <p class="label">{t('Руководство', 'Geschäftsführung')}</p>
-      <h2 class="h2">{t('Доктор Галия Джунусалиева', 'Dr. Galia Shunussalieva')}</h2>
-      <p class="founder__role">{t('Учредитель и управляющий партнер', 'Gründerin und geschäftsführende Gesellschafterin')}</p>
-      <p class="lead">{t('Главный специалист компании. Имеет огромный опыт и специальные знания в области консалтинговых услуг.', 'Leitende Expertin des Unternehmens mit umfassender Erfahrung und Fachkenntnis in der Beratung.')}</p>
       <ul class="career">{career_html}</ul>
-      <p class="founder__note">{t('После 23-летней деятельности в области казахстанско-германских экономических отношений Г. Джунусалиева возобновила свою деятельность в компании ТОО «ГалА-Консалт».', 'Nach 23 Jahren Tätigkeit in den kasachisch-deutschen Wirtschaftsbeziehungen hat G.&nbsp;Shunussalieva ihre Arbeit bei GalA-Consult wieder aufgenommen.')}</p>
+      <div class="team"><p class="team__title">{t('Команда', 'Team')}</p><p>{t('Сотрудники компании: высококвалифицированные специалисты из разных отраслей со знанием иностранных языков, обладающие большим опытом в области внешнеэкономических связей, развития и укрепления деловых связей, в частности между Германией и Казахстаном.', 'Unsere Mitarbeiterinnen und Mitarbeiter sind hochqualifizierte Fachleute aus verschiedenen Branchen mit Fremdsprachen&shy;kenntnissen und langjähriger Erfahrung in den Außenwirtschafts&shy;beziehungen sowie im Auf- und Ausbau von Geschäfts&shy;beziehungen, insbesondere zwischen Deutschland und Kasachstan.')}</p></div>
     </div>
   </div>
 </section>
@@ -749,8 +751,8 @@ def home():
       <div class="cinfo__row"><dt>{t('Адрес', 'Adresse')}</dt><dd><span class="cinfo__line" id="c-addr">{t(*ADDR)}, {t('Казахстан', 'Kasachstan')}</span>
         <span class="cinfo__links"><a class="chip" href="https://2gis.kz/almaty/search/%D0%96%D0%B0%D0%BC%D0%B1%D1%8B%D0%BB%D0%B0%2026" target="_blank" rel="noopener">{I['pin']}{t('2ГИС', '2GIS')}</a><a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=%D0%96%D0%B0%D0%BC%D0%B1%D1%8B%D0%BB%D0%B0+26+%D0%90%D0%BB%D0%BC%D0%B0%D1%82%D1%8B" target="_blank" rel="noopener">{I['pin']}{t('Google Карты', 'Google Maps')}</a></span></dd></div>
       <div class="cinfo__row"><dt>{t('Телефоны', 'Telefon')}</dt><dd>
-        <span class="cinfo__line"><a href="tel:+77015509900" id="c-tel1">+7 701 550-99-00</a><button class="copy" type="button" data-copy="+7 701 550-99-00" aria-controls="c-tel1" aria-label="{copy}">{I['copy']}</button></span>
-        <span class="cinfo__line"><a href="tel:+77272501139" id="c-tel2">+7 727 250-11-39</a><button class="copy" type="button" data-copy="+7 727 250-11-39" aria-controls="c-tel2" aria-label="{copy}">{I['copy']}</button></span></dd></div>
+        <span class="cinfo__line"><a href="tel:+77013042818" id="c-tel1">+7 701 304-28-18</a><button class="copy" type="button" data-copy="+7 701 304-28-18" aria-controls="c-tel1" aria-label="{copy}">{I['copy']}</button></span>
+        <span class="cinfo__line"><a href="tel:+77017149317" id="c-tel2">+7 701 714-93-17</a><button class="copy" type="button" data-copy="+7 701 714-93-17" aria-controls="c-tel2" aria-label="{copy}">{I['copy']}</button></span></dd></div>
       <div class="cinfo__row"><dt>{t('Почта', 'E-Mail')}</dt><dd>
         <span class="cinfo__line"><a href="mailto:gaco@galaconsult.kz" id="c-m1">gaco@galaconsult.kz</a><button class="copy" type="button" data-copy="gaco@galaconsult.kz" aria-controls="c-m1" aria-label="{copy}">{I['copy']}</button></span>
         <span class="cinfo__line"><a href="mailto:info@galaconsult.kz" id="c-m2">info@galaconsult.kz</a><button class="copy" type="button" data-copy="info@galaconsult.kz" aria-controls="c-m2" aria-label="{copy}">{I['copy']}</button></span></dd></div>
@@ -789,7 +791,7 @@ def project_page(i):
         elif kind == 'ol': blocks += '<ol>' + ''.join(f'<li>{x}</li>' for x in val) + '</ol>'
         elif kind == 'callout': blocks += f'<p class="callout">{val}</p>'
     sign = (f'<div class="letter__sign">{t("С уважением и наилучшими пожеланиями,", "Mit freundlichen Grüßen und den besten Wünschen")}<b>{t("ТОО «ГалА-Консалт»", "GalA-Consult LLP")}</b></div>' if p.get('sign') else
-            f'<div class="letter__sign">{t("По вопросам участия", "Fragen zur Teilnahme")}: gaco@galaconsult.kz, info@galaconsult.kz, <span class="nw">+7 701 550-99-00</span><b>{t("ТОО «ГалА-Консалт»", "GalA-Consult LLP")}</b></div>')
+            f'<div class="letter__sign">{t("По вопросам участия", "Fragen zur Teilnahme")}: gaco@galaconsult.kz, info@galaconsult.kz, <span class="nw">+7 701 304-28-18</span><b>{t("ТОО «ГалА-Консалт»", "GalA-Consult LLP")}</b></div>')
     over = date.fromisoformat(p['end']) < date.today()
     docs_att = ''.join(doc_row(x, n + 1, over) for n, x in enumerate(pv(p, 'docs')))
     docs_side = ''.join(doc_row(x, None, over) for x in pv(p, 'docs'))
@@ -816,7 +818,7 @@ def project_page(i):
     </header>
     <div class="pp__grid">
       <article class="letter">
-        <div class="letter__head"><img src="{d}assets/img/logo-full.svg" alt="GalA-Consult · ГалА-Консалт" width="300" height="111"><p class="letter__addr">{t('ТОО «ГалА-Консалт»', 'GalA-Consult LLP')}<br>{t(*ADDR)}<br>gaco@galaconsult.kz · <span class="nw">+7 727 250-11-39</span></p></div>
+        <div class="letter__head"><img src="{d}assets/img/logo-full.svg" alt="GalA-Consult · ГалА-Консалт" width="300" height="111"><p class="letter__addr">{t('ТОО «ГалА-Консалт»', 'GalA-Consult LLP')}<br>{t(*ADDR)}<br>gaco@galaconsult.kz · <span class="nw">+7 701 304-28-18</span></p></div>
         <div class="letter__body">{blocks}</div>
         {sign}
         <div class="attach" id="documents"><p class="attach__title">{t('Приложения', 'Anlagen')}</p><ul class="docs">{docs_att}</ul></div>
@@ -824,7 +826,7 @@ def project_page(i):
       <aside class="pp__side">
         <div class="side side--docs"><p class="side__title">{t('Документы', 'Dokumente')}</p><ul class="docs">{docs_side}</ul></div>
         <div class="side"><p class="side__title">{t('Коротко', 'Auf einen Blick')}</p><dl class="kv">{kv_html}</dl></div>
-        <div class="side side--ask"><p class="side__title">{t('Вопросы по участию', 'Fragen zur Teilnahme')}</p><div class="ask"><a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a><a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a><a href="tel:+77015509900">+7 701 550-99-00</a></div><a class="btn btn--sm" href="mailto:gaco@galaconsult.kz" data-form data-topic="{TOPICS[4][0]}" data-project="{E(p['short'])}">{t('Задать вопрос', 'Frage stellen')}</a></div>
+        <div class="side side--ask"><p class="side__title">{t('Вопросы по участию', 'Fragen zur Teilnahme')}</p><div class="ask"><a href="mailto:gaco@galaconsult.kz">gaco@galaconsult.kz</a><a href="mailto:info@galaconsult.kz">info@galaconsult.kz</a><a href="tel:+77013042818">+7 701 304-28-18</a></div><a class="btn btn--sm" href="mailto:gaco@galaconsult.kz" data-form data-topic="{TOPICS[4][0]}" data-project="{E(p['short'])}">{t('Задать вопрос', 'Frage stellen')}</a></div>
       </aside>
     </div>
     <nav class="pp__nav" aria-label="{t('Другие проекты', 'Weitere Projekte')}">{left}{right}</nav>
