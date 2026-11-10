@@ -733,7 +733,7 @@ def home():
 
 <section class="sec sec--paper" id="geography">
   <div class="wrap">
-    <div class="sec__head sec__head--row"><div><p class="label">{t('География', 'Geografie')}</p><h2 class="h2">{t('Казахстан и немецкоязычная Европа', 'Kasachstan und der deutschsprachige Raum')}</h2></div><p class="sec__note">{t('Информируем казахстанские предприятия о возможностях сотрудничества в Германии, Австрии, Швейцарии и Южном Тироле и сопровождаем делегации на выставки и встречи с партнерами.', 'Wir informieren kasachische Unternehmen über Kooperationsmöglichkeiten in Deutschland, Österreich, der Schweiz und Südtirol und begleiten Delegationen zu Messen und Partnertreffen.')}</p></div>
+    <div class="sec__head sec__head--row sec__head--note"><div><p class="label">{t('География', 'Geografie')}</p><h2 class="h2">{t('Казахстан и немецкоязычная Европа', 'Kasachstan und der deutschsprachige Raum')}</h2></div><p class="sec__note">{t('Информируем казахстанские предприятия о возможностях сотрудничества в Германии, Австрии, Швейцарии и Южном Тироле и сопровождаем делегации на выставки и встречи с партнерами.', 'Wir informieren kasachische Unternehmen über Kooperationsmöglichkeiten in Deutschland, Österreich, der Schweiz und Südtirol und begleiten Delegationen zu Messen und Partnertreffen.')}</p></div>
     {geo_map(d)}
     {flags_row(d)}
   </div>
